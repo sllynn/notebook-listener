@@ -5,6 +5,7 @@ import org.apache.spark.sql.util.QueryExecutionListener
 import org.apache.spark.internal.Logging
 import org.apache.spark.sql.execution.SimpleMode
 
+
 class NotebookQueryExecutionListener extends QueryExecutionListener with Logging{
 
   override def onSuccess(funcName: String, qe: QueryExecution, durationNs: Long): Unit = {
